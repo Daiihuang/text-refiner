@@ -24,4 +24,21 @@ const BottomBar = () => {
           onChange={(event) => settingContext.setModel(event.target.value)}
         >
           {settingContext.provider?.models?.map((model) => (
-            <SelectItem value={mod
+            <SelectItem value={model} key={model} id={model} className="text-xs">
+              {model}
+            </SelectItem>
+          )) || []}
+        </Select>
+        <div className="relative w-full">
+          <input
+            className="rounded-md p-1.5 pl-8 text-sm w-full"
+            placeholder="Writing style"
+          >
+          </input>
+          <FaWandMagicSparkles size={18} className="absolute top-1.5 left-2 text-gray-500" />
+        </div>
+        <p className="w-4/12 text-gray-500 text-xs text-right">
+          © 2024 Refiner App
+        </p>
+      </div>
+     
