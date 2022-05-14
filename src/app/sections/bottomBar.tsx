@@ -41,4 +41,18 @@ const BottomBar = () => {
           © 2024 Refiner App
         </p>
       </div>
-     
+      {
+        openSettings && (
+          <Settings
+            isOpen={openSettings}
+            onOpen={() => setOpenSettings(true)}
+            onOpenChange={() => setOpenSettings(false)}
+          />
+        )
+      }
+    </div >
+
+  );
+};
+
+export { BottomBar };
