@@ -28,4 +28,27 @@ const Settings = ({
   onOpen,
   onOpenChange,
 }: {
- 
+  isOpen: boolean;
+  onOpen: () => void;
+  onOpenChange: () => void;
+}) => {
+  const settingContext = useContext(SettingContext);
+
+  return (
+    <>
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        placement="top-center"
+        size="sm"
+      >
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">
+                Settings:{" "}
+              </ModalHeader>
+              <ModalBody>
+                <div className="flex w-full space-x-2">
+                  <Select
+                    autoFo
