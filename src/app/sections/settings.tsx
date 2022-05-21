@@ -51,4 +51,15 @@ const Settings = ({
               <ModalBody>
                 <div className="flex w-full space-x-2">
                   <Select
-                    autoFo
+                    autoFocus
+                    label="Provider"
+                    placeholder={settingContext.provider?.label ?? "Ollama"}
+                    variant="bordered"
+                    className="w-1/2"
+                    onChange={(e) => {
+                      const selectedProviderName = e.target.value.toLowerCase();
+                      const provider = providerMap[selectedProviderName];
+                      settingContext.setProvider(provider);
+                      // Change provider also changes the model
+                      if (provider.models) {
+                        s
