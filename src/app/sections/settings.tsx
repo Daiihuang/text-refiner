@@ -95,4 +95,20 @@ const Settings = ({
                   id="apiKey"
                   type="secret"
                   label="API Key"
-                  variant=
+                  variant="bordered"
+                />
+              </ModalBody>
+              <ModalFooter>
+                {/* call api to save api key */}
+                <Button
+                  color="primary"
+                  onClick={async () => {
+                    // Get the API key
+                    const inputtedApiKey = document.getElementById("apiKey") as HTMLInputElement;
+                    const apiKey = inputtedApiKey.value.trim();
+                    // Store the API key
+                    await store_api_key(
+                      apiKey,
+                    );
+                    onClose();
+      
