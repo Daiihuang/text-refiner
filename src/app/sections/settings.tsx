@@ -62,4 +62,21 @@ const Settings = ({
                       settingContext.setProvider(provider);
                       // Change provider also changes the model
                       if (provider.models) {
-                        s
+                        settingContext.setModel(provider.models[0]);
+                      }
+                    }}
+                  >
+                    <SelectItem value="Ollama" key="ollama">
+                      Ollama
+                    </SelectItem>
+                    <SelectItem value="OpenAI" key="openai">
+                      OpenAI
+                    </SelectItem>
+                  </Select>
+                  <Select
+                    label="Model"
+                    variant="bordered"
+                    className="w-1/2"
+                    aria-label="Select a model"
+                    value={settingContext.model}
+             
