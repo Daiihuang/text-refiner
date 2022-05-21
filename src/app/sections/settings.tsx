@@ -79,4 +79,20 @@ const Settings = ({
                     className="w-1/2"
                     aria-label="Select a model"
                     value={settingContext.model}
-             
+                    placeholder={settingContext.model}
+                    onChange={(e) => {
+                      settingContext.setModel(e.target.value);
+                    }}
+                  >
+                    {settingContext.provider?.models?.map((model) => (
+                      <SelectItem value={model} key={model} id={model}>
+                        {model}
+                      </SelectItem>
+                    )) || []}
+                  </Select>
+                </div>
+                <Input
+                  id="apiKey"
+                  type="secret"
+                  label="API Key"
+                  variant=
