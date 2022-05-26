@@ -111,4 +111,17 @@ const Settings = ({
                       apiKey,
                     );
                     onClose();
-      
+                  }}
+                >
+                  Save
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+    </>
+  );
+};
+
+export { Settings };
