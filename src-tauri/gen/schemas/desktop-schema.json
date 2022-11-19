@@ -51,3 +51,23 @@
         "description": {
           "description": "Description of the capability.",
           "default": "",
+          "type": "string"
+        },
+        "remote": {
+          "description": "Configure remote URLs that can use the capability permissions.",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/CapabilityRemote"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "local": {
+          "description": "Whether this capability is enabled for local app URLs or not. Defaults to `true`.",
+          "default": true,
+          "type": "boolean"
+        },
+        "windows": {
+ 
