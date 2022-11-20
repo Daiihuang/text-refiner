@@ -110,4 +110,18 @@
       ],
       "properties": {
         "urls": {
-          "description": "Remote domains this capability refers to using the [URLPattern standard](https://urlpattern.spec.whatwg.org/).\n\n# Examples\n\n- \"https://*.mydomain.dev\": allows subdomains of 
+          "description": "Remote domains this capability refers to using the [URLPattern standard](https://urlpattern.spec.whatwg.org/).\n\n# Examples\n\n- \"https://*.mydomain.dev\": allows subdomains of mydomain.dev - \"https://mydomain.dev/api/*\": allows any subpath of mydomain.dev/api",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PermissionEntry": {
+      "description": "An entry for a permission value in a [`Capability`] can be either a raw permission [`Identifier`] or an object that references a permission and extends its scope.",
+      "anyOf": [
+        {
+          "description": "Reference a permission or permission set by identifier.",
+          "allOf": [
+          
