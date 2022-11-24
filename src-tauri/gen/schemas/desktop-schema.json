@@ -124,4 +124,25 @@
         {
           "description": "Reference a permission or permission set by identifier.",
           "allOf": [
-          
+            {
+              "$ref": "#/definitions/Identifier"
+            }
+          ]
+        },
+        {
+          "description": "Reference a permission or permission set by identifier and extends its scope.",
+          "type": "object",
+          "oneOf": [
+            {
+              "type": "object",
+              "required": [
+                "identifier"
+              ],
+              "properties": {
+                "identifier": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "shell:default"
+    
