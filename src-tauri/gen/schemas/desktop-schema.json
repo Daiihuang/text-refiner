@@ -145,4 +145,16 @@
                       "type": "string",
                       "enum": [
                         "shell:default"
-    
+                      ]
+                    },
+                    {
+                      "description": "shell:allow-execute -> Enables the execute command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:allow-execute"
+                      ]
+                    },
+                    {
+                      "description": "shell:allow-kill -> Enables the kill command without any pre-configured scope.",
+                      "type": "string",
+         
