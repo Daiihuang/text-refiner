@@ -170,4 +170,17 @@
                     },
                     {
                       "description": "shell:allow-stdin-write -> Enables the stdin_write command without any pre-configured scope.",
- 
+                      "type": "string",
+                      "enum": [
+                        "shell:allow-stdin-write"
+                      ]
+                    },
+                    {
+                      "description": "shell:deny-execute -> Denies the execute command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-execute"
+                      ]
+                    },
+                    {
+                      "description": "shell:deny-kill -> Denie
