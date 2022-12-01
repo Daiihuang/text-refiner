@@ -183,4 +183,18 @@
                       ]
                     },
                     {
-                      "description": "shell:deny-kill -> Denie
+                      "description": "shell:deny-kill -> Denies the kill command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-kill"
+                      ]
+                    },
+                    {
+                      "description": "shell:deny-open -> Denies the open command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-open"
+                      ]
+                    },
+                    {
+                      "description": "she
