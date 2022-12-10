@@ -197,4 +197,18 @@
                       ]
                     },
                     {
-                      "description": "she
+                      "description": "shell:deny-stdin-write -> Denies the stdin_write command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-stdin-write"
+                      ]
+                    }
+                  ]
+                },
+                "allow": {
+                  "items": {
+                    "title": "Entry",
+                    "description": "A command allowed to be executed by the webview API.",
+                    "type": "object",
+                    "required": [
+        
