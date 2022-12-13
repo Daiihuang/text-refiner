@@ -211,4 +211,19 @@
                     "description": "A command allowed to be executed by the webview API.",
                     "type": "object",
                     "required": [
-        
+                      "args",
+                      "cmd",
+                      "name",
+                      "sidecar"
+                    ],
+                    "properties": {
+                      "args": {
+                        "description": "The allowed arguments for the command execution.",
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/ShellAllowedArgs"
+                          }
+                        ]
+                      },
+                      "cmd": {
+                        "description": "The command name. It can start with a variable that resolves to 
