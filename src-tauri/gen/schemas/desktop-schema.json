@@ -230,4 +230,20 @@
                         "type": "string"
                       },
                       "name": {
-                        "description": "The name for this allowed shell command configuration.\n\nThis name will be used inside of the webview API to call this command along with any specifie
+                        "description": "The name for this allowed shell command configuration.\n\nThis name will be used inside of the webview API to call this command along with any specified arguments.",
+                        "type": "string"
+                      },
+                      "sidecar": {
+                        "description": "If this command is a sidecar command.",
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                },
+                "deny": {
+                  "items": {
+                    "title": "Entry",
+                    "description": "A command allowed to be executed by the webview API.",
+                    "type": "object",
+                    "required": [
+            
