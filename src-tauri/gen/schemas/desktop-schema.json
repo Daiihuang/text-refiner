@@ -305,4 +305,21 @@
           ]
         },
         {
-          "description": "app:allow-name -> Enables the 
+          "description": "app:allow-name -> Enables the name command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-name"
+          ]
+        },
+        {
+          "description": "app:allow-tauri-version -> Enables the tauri_version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-tauri-version"
+          ]
+        },
+        {
+          "description": "app:allow-version -> Enables the version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:
