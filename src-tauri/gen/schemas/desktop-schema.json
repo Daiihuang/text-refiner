@@ -285,3 +285,24 @@
       "oneOf": [
         {
           "description": "app:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "app:default"
+          ]
+        },
+        {
+          "description": "app:allow-app-hide -> Enables the app_hide command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-app-hide"
+          ]
+        },
+        {
+          "description": "app:allow-app-show -> Enables the app_show command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-app-show"
+          ]
+        },
+        {
+          "description": "app:allow-name -> Enables the 
