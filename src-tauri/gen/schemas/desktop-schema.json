@@ -322,4 +322,22 @@
           "description": "app:allow-version -> Enables the version command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "app:
+            "app:allow-version"
+          ]
+        },
+        {
+          "description": "app:deny-app-hide -> Denies the app_hide command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-app-hide"
+          ]
+        },
+        {
+          "description": "app:deny-app-show -> Denies the app_show command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-app-show"
+          ]
+        },
+        {
+          "description": "app:deny-name -> Denies the na
