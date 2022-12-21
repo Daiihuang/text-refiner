@@ -340,4 +340,23 @@
           ]
         },
         {
-          "description": "app:deny-name -> Denies the na
+          "description": "app:deny-name -> Denies the name command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-name"
+          ]
+        },
+        {
+          "description": "app:deny-tauri-version -> Denies the tauri_version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-tauri-version"
+          ]
+        },
+        {
+          "description": "app:deny-version -> Denies the version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-version"
+          ]
+ 
