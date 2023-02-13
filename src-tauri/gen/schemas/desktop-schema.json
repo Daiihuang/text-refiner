@@ -435,4 +435,22 @@
             "dialog:allow-save"
           ]
         },
-        
+        {
+          "description": "dialog:deny-ask -> Denies the ask command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "dialog:deny-ask"
+          ]
+        },
+        {
+          "description": "dialog:deny-confirm -> Denies the confirm command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "dialog:deny-confirm"
+          ]
+        },
+        {
+          "description": "dialog:deny-message -> Denies the message command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+   
