@@ -397,4 +397,22 @@
         {
           "type": "string",
           "enum": [
-        
+            "dialog:default"
+          ]
+        },
+        {
+          "description": "dialog:allow-ask -> Enables the ask command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "dialog:allow-ask"
+          ]
+        },
+        {
+          "description": "dialog:allow-confirm -> Enables the confirm command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "dialog:allow-confirm"
+          ]
+        },
+        {
+          "description": "dialog:allow-message -> Enables the message 
