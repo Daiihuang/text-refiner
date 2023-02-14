@@ -472,3 +472,24 @@
         },
         {
           "description": "event:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "event:default"
+          ]
+        },
+        {
+          "description": "event:allow-emit -> Enables the emit command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "event:allow-emit"
+          ]
+        },
+        {
+          "description": "event:allow-emit-to -> Enables the emit_to command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "event:allow-emit-to"
+          ]
+        },
+        {
+          "
