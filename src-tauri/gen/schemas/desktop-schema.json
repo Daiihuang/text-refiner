@@ -509,4 +509,22 @@
           "description": "event:deny-emit -> Denies the emit command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "even
+            "event:deny-emit"
+          ]
+        },
+        {
+          "description": "event:deny-emit-to -> Denies the emit_to command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "event:deny-emit-to"
+          ]
+        },
+        {
+          "description": "event:deny-listen -> Denies the listen command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "event:deny-listen"
+          ]
+        },
+        {
+          "description": "event:deny-unlisten -> Denies the unlisten command without any pre-configured scope
