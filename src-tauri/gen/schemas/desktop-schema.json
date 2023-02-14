@@ -492,4 +492,21 @@
           ]
         },
         {
-          "
+          "description": "event:allow-listen -> Enables the listen command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "event:allow-listen"
+          ]
+        },
+        {
+          "description": "event:allow-unlisten -> Enables the unlisten command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "event:allow-unlisten"
+          ]
+        },
+        {
+          "description": "event:deny-emit -> Denies the emit command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "even
