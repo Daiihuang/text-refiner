@@ -527,4 +527,24 @@
           ]
         },
         {
-          "description": "event:deny-unlisten -> Denies the unlisten command without any pre-configured scope
+          "description": "event:deny-unlisten -> Denies the unlisten command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "event:deny-unlisten"
+          ]
+        },
+        {
+          "type": "string",
+          "enum": [
+            "global-shortcut:default"
+          ]
+        },
+        {
+          "description": "global-shortcut:allow-is-registered -> Enables the is_registered command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "global-shortcut:allow-is-registered"
+          ]
+        },
+        {
+          "description": "global-shortcut:allow-register -> Enables t
