@@ -547,4 +547,20 @@
           ]
         },
         {
-          "description": "global-shortcut:allow-register -> Enables t
+          "description": "global-shortcut:allow-register -> Enables the register command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "global-shortcut:allow-register"
+          ]
+        },
+        {
+          "description": "global-shortcut:allow-register-all -> Enables the register_all command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "global-shortcut:allow-register-all"
+          ]
+        },
+        {
+          "description": "global-shortcut:allow-unregister -> Enables the unregister command without any pre-configured scope.",
+          "type": "string",
+          "e
