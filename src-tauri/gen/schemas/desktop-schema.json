@@ -581,4 +581,19 @@
             "global-shortcut:deny-is-registered"
           ]
         },
-  
+        {
+          "description": "global-shortcut:deny-register -> Denies the register command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "global-shortcut:deny-register"
+          ]
+        },
+        {
+          "description": "global-shortcut:deny-register-all -> Denies the register_all command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "global-shortcut:deny-register-all"
+          ]
+        },
+        {
+          "description": "global-shortcut:deny-unregister -> Denies the u
