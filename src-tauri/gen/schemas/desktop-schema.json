@@ -596,4 +596,21 @@
           ]
         },
         {
-          "description": "global-shortcut:deny-unregister -> Denies the u
+          "description": "global-shortcut:deny-unregister -> Denies the unregister command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "global-shortcut:deny-unregister"
+          ]
+        },
+        {
+          "description": "global-shortcut:deny-unregister-all -> Denies the unregister_all command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "global-shortcut:deny-unregister-all"
+          ]
+        },
+        {
+          "description": "image:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+      
