@@ -669,4 +669,23 @@
           "description": "image:deny-new -> Denies the new command without any pre-configured scope.",
           "type": "string",
           "enum": [
-  
+            "image:deny-new"
+          ]
+        },
+        {
+          "description": "image:deny-rgba -> Denies the rgba command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:deny-rgba"
+          ]
+        },
+        {
+          "description": "image:deny-size -> Denies the size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:deny-size"
+          ]
+        },
+        {
+          "description": "log:default -> Allows the log command",
+          "type": "string
