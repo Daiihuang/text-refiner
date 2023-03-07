@@ -651,4 +651,22 @@
             "image:allow-size"
           ]
         },
+        {
+          "description": "image:deny-from-bytes -> Denies the from_bytes command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:deny-from-bytes"
+          ]
+        },
+        {
+          "description": "image:deny-from-path -> Denies the from_path command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:deny-from-path"
+          ]
+        },
+        {
+          "description": "image:deny-new -> Denies the new command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
   
