@@ -631,4 +631,24 @@
           ]
         },
         {
-          "description": "image:allow-n
+          "description": "image:allow-new -> Enables the new command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:allow-new"
+          ]
+        },
+        {
+          "description": "image:allow-rgba -> Enables the rgba command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:allow-rgba"
+          ]
+        },
+        {
+          "description": "image:allow-size -> Enables the size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:allow-size"
+          ]
+        },
+  
