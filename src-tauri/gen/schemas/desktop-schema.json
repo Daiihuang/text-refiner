@@ -613,4 +613,22 @@
           "description": "image:default -> Default permissions for the plugin.",
           "type": "string",
           "enum": [
-      
+            "image:default"
+          ]
+        },
+        {
+          "description": "image:allow-from-bytes -> Enables the from_bytes command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:allow-from-bytes"
+          ]
+        },
+        {
+          "description": "image:allow-from-path -> Enables the from_path command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "image:allow-from-path"
+          ]
+        },
+        {
+          "description": "image:allow-n
