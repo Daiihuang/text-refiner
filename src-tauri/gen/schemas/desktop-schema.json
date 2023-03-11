@@ -710,4 +710,23 @@
         {
           "description": "menu:default -> Default permissions for the plugin.",
           "type": "string",
-    
+          "enum": [
+            "menu:default"
+          ]
+        },
+        {
+          "description": "menu:allow-append -> Enables the append command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-append"
+          ]
+        },
+        {
+          "description": "menu:allow-create-default -> Enables the create_default command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-create-default"
+          ]
+        },
+        {
+          "description": "menu:allow-get -> Enable
