@@ -729,4 +729,23 @@
           ]
         },
         {
-          "description": "menu:allow-get -> Enable
+          "description": "menu:allow-get -> Enables the get command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-get"
+          ]
+        },
+        {
+          "description": "menu:allow-insert -> Enables the insert command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-insert"
+          ]
+        },
+        {
+          "description": "menu:allow-is-checked -> Enables the is_checked command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-is-checked"
+          ]
+        
