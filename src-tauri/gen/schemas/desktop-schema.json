@@ -766,4 +766,23 @@
         {
           "description": "menu:allow-new -> Enables the new command without any pre-configured scope.",
           "type": "string",
-          "enu
+          "enum": [
+            "menu:allow-new"
+          ]
+        },
+        {
+          "description": "menu:allow-popup -> Enables the popup command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-popup"
+          ]
+        },
+        {
+          "description": "menu:allow-prepend -> Enables the prepend command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-prepend"
+          ]
+        },
+        {
+          "description": "menu:allow-remove -> Enables the remove command without any pre-configured scop
