@@ -785,4 +785,24 @@
           ]
         },
         {
-          "description": "menu:allow-remove -> Enables the remove command without any pre-configured scop
+          "description": "menu:allow-remove -> Enables the remove command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-remove"
+          ]
+        },
+        {
+          "description": "menu:allow-remove-at -> Enables the remove_at command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-remove-at"
+          ]
+        },
+        {
+          "description": "menu:allow-set-accelerator -> Enables the set_accelerator command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-set-accelerator"
+          ]
+        },
+        {
