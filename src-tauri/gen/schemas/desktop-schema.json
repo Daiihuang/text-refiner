@@ -890,4 +890,25 @@
           ]
         },
         {
-          "description": "menu:deny-insert -> Denies the insert command w
+          "description": "menu:deny-insert -> Denies the insert command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-insert"
+          ]
+        },
+        {
+          "description": "menu:deny-is-checked -> Denies the is_checked command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-is-checked"
+          ]
+        },
+        {
+          "description": "menu:deny-is-enabled -> Denies the is_enabled command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-is-enabled"
+          ]
+        },
+        {
+ 
