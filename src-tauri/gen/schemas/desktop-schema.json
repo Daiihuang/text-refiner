@@ -834,4 +834,25 @@
           ]
         },
         {
-          "description": "menu:allow-set-checked -> Enables the set_checked command without any pre-config
+          "description": "menu:allow-set-checked -> Enables the set_checked command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-set-checked"
+          ]
+        },
+        {
+          "description": "menu:allow-set-enabled -> Enables the set_enabled command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-set-enabled"
+          ]
+        },
+        {
+          "description": "menu:allow-set-icon -> Enables the set_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-set-icon"
+          ]
+        },
+        {
+          "descr
