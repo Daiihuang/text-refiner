@@ -871,4 +871,23 @@
         {
           "description": "menu:deny-append -> Denies the append command without any pre-configured scope.",
           "type": "string",
-          "enu
+          "enum": [
+            "menu:deny-append"
+          ]
+        },
+        {
+          "description": "menu:deny-create-default -> Denies the create_default command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-create-default"
+          ]
+        },
+        {
+          "description": "menu:deny-get -> Denies the get command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-get"
+          ]
+        },
+        {
+          "description": "menu:deny-insert -> Denies the insert command w
