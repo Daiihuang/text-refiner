@@ -855,4 +855,20 @@
           ]
         },
         {
-          "descr
+          "description": "menu:allow-set-text -> Enables the set_text command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-set-text"
+          ]
+        },
+        {
+          "description": "menu:allow-text -> Enables the text command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:allow-text"
+          ]
+        },
+        {
+          "description": "menu:deny-append -> Denies the append command without any pre-configured scope.",
+          "type": "string",
+          "enu
