@@ -911,4 +911,21 @@
           ]
         },
         {
- 
+          "description": "menu:deny-items -> Denies the items command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-items"
+          ]
+        },
+        {
+          "description": "menu:deny-new -> Denies the new command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-new"
+          ]
+        },
+        {
+          "description": "menu:deny-popup -> Denies the popup command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "me
