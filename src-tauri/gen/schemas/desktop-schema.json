@@ -928,4 +928,22 @@
           "description": "menu:deny-popup -> Denies the popup command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "me
+            "menu:deny-popup"
+          ]
+        },
+        {
+          "description": "menu:deny-prepend -> Denies the prepend command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-prepend"
+          ]
+        },
+        {
+          "description": "menu:deny-remove -> Denies the remove command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-remove"
+          ]
+        },
+        {
+          "description": "menu:deny-remove-at -> Denies the remove_at command without any pre-configured scope."
