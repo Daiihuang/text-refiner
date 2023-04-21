@@ -946,4 +946,22 @@
           ]
         },
         {
-          "description": "menu:deny-remove-at -> Denies the remove_at command without any pre-configured scope."
+          "description": "menu:deny-remove-at -> Denies the remove_at command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-remove-at"
+          ]
+        },
+        {
+          "description": "menu:deny-set-accelerator -> Denies the set_accelerator command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-set-accelerator"
+          ]
+        },
+        {
+          "description": "menu:deny-set-as-app-menu -> Denies the set_as_app_menu command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-set-as-app-menu"
+   
