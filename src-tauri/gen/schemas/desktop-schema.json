@@ -981,4 +981,19 @@
           ]
         },
         {
-          "description": "menu:deny-set-as-windows-me
+          "description": "menu:deny-set-as-windows-menu-for-nsapp -> Denies the set_as_windows_menu_for_nsapp command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-set-as-windows-menu-for-nsapp"
+          ]
+        },
+        {
+          "description": "menu:deny-set-checked -> Denies the set_checked command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-set-checked"
+          ]
+        },
+        {
+          "description": "menu:deny-set-enabled -> Denies the set_enabled command without any pre-configured scope.",
+   
