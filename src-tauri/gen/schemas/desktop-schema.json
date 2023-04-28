@@ -996,4 +996,24 @@
         },
         {
           "description": "menu:deny-set-enabled -> Denies the set_enabled command without any pre-configured scope.",
-   
+          "type": "string",
+          "enum": [
+            "menu:deny-set-enabled"
+          ]
+        },
+        {
+          "description": "menu:deny-set-icon -> Denies the set_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-set-icon"
+          ]
+        },
+        {
+          "description": "menu:deny-set-text -> Denies the set_text command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-set-text"
+          ]
+        },
+        {
+      
