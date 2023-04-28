@@ -1016,4 +1016,22 @@
           ]
         },
         {
-      
+          "description": "menu:deny-text -> Denies the text command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "menu:deny-text"
+          ]
+        },
+        {
+          "description": "path:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "path:default"
+          ]
+        },
+        {
+          "description": "path:allow-basename -> Enables the basename command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-basename"
+    
