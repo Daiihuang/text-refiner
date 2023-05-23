@@ -1069,3 +1069,21 @@
           "type": "string",
           "enum": [
             "path:allow-normalize"
+          ]
+        },
+        {
+          "description": "path:allow-resolve -> Enables the resolve command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-resolve"
+          ]
+        },
+        {
+          "description": "path:allow-resolve-directory -> Enables the resolve_directory command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-resolve-directory"
+          ]
+        },
+        {
+          "description": "path:deny-basename -> Denies the basen
