@@ -1034,4 +1034,21 @@
           "type": "string",
           "enum": [
             "path:allow-basename"
-    
+          ]
+        },
+        {
+          "description": "path:allow-dirname -> Enables the dirname command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-dirname"
+          ]
+        },
+        {
+          "description": "path:allow-extname -> Enables the extname command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-extname"
+          ]
+        },
+        {
+          "description": "path:allow-is-absolute -> Enables the is_absolute command without any pre-configu
