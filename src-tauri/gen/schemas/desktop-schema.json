@@ -1051,4 +1051,21 @@
           ]
         },
         {
-          "description": "path:allow-is-absolute -> Enables the is_absolute command without any pre-configu
+          "description": "path:allow-is-absolute -> Enables the is_absolute command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-is-absolute"
+          ]
+        },
+        {
+          "description": "path:allow-join -> Enables the join command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-join"
+          ]
+        },
+        {
+          "description": "path:allow-normalize -> Enables the normalize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:allow-normalize"
