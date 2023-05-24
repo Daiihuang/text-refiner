@@ -1086,4 +1086,23 @@
           ]
         },
         {
-          "description": "path:deny-basename -> Denies the basen
+          "description": "path:deny-basename -> Denies the basename command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:deny-basename"
+          ]
+        },
+        {
+          "description": "path:deny-dirname -> Denies the dirname command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:deny-dirname"
+          ]
+        },
+        {
+          "description": "path:deny-extname -> Denies the extname command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:deny-extname"
+          ]
+       
