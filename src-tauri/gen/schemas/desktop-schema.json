@@ -1105,4 +1105,21 @@
           "enum": [
             "path:deny-extname"
           ]
-       
+        },
+        {
+          "description": "path:deny-is-absolute -> Denies the is_absolute command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:deny-is-absolute"
+          ]
+        },
+        {
+          "description": "path:deny-join -> Denies the join command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:deny-join"
+          ]
+        },
+        {
+          "description": "path:deny-normalize -> Denies the normalize command without any pre-configured scope.",
+    
