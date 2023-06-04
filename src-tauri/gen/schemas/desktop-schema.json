@@ -1122,4 +1122,24 @@
         },
         {
           "description": "path:deny-normalize -> Denies the normalize command without any pre-configured scope.",
-    
+          "type": "string",
+          "enum": [
+            "path:deny-normalize"
+          ]
+        },
+        {
+          "description": "path:deny-resolve -> Denies the resolve command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:deny-resolve"
+          ]
+        },
+        {
+          "description": "path:deny-resolve-directory -> Denies the resolve_directory command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "path:deny-resolve-directory"
+          ]
+        },
+        {
+          "descr
