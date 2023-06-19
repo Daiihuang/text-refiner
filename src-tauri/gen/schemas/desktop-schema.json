@@ -1177,4 +1177,24 @@
           ]
         },
         {
-          "description": "resources:deny-close -
+          "description": "resources:deny-close -> Denies the close command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "resources:deny-close"
+          ]
+        },
+        {
+          "type": "string",
+          "enum": [
+            "shell:default"
+          ]
+        },
+        {
+          "description": "shell:allow-execute -> Enables the execute command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "shell:allow-execute"
+          ]
+        },
+        {
+          "description": "shell:allow-kill -> Enables the kill command without any pre-con
