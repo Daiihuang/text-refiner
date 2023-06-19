@@ -1157,4 +1157,24 @@
         },
         {
           "description": "positioner:deny-move-window -> Denies the move_window command without any pre-configured scope.",
-          "type"
+          "type": "string",
+          "enum": [
+            "positioner:deny-move-window"
+          ]
+        },
+        {
+          "description": "resources:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "resources:default"
+          ]
+        },
+        {
+          "description": "resources:allow-close -> Enables the close command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "resources:allow-close"
+          ]
+        },
+        {
+          "description": "resources:deny-close -
