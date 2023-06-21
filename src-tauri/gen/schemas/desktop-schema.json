@@ -1197,4 +1197,25 @@
           ]
         },
         {
-          "description": "shell:allow-kill -> Enables the kill command without any pre-con
+          "description": "shell:allow-kill -> Enables the kill command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "shell:allow-kill"
+          ]
+        },
+        {
+          "description": "shell:allow-open -> Enables the open command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "shell:allow-open"
+          ]
+        },
+        {
+          "description": "shell:allow-stdin-write -> Enables the stdin_write command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "shell:allow-stdin-write"
+          ]
+        },
+        {
+ 
