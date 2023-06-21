@@ -1218,4 +1218,21 @@
           ]
         },
         {
- 
+          "description": "shell:deny-execute -> Denies the execute command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "shell:deny-execute"
+          ]
+        },
+        {
+          "description": "shell:deny-kill -> Denies the kill command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "shell:deny-kill"
+          ]
+        },
+        {
+          "description": "shell:deny-open -> Denies the open command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "s
