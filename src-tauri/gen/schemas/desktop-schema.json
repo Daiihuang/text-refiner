@@ -1258,3 +1258,22 @@
             "store:allow-clear"
           ]
         },
+        {
+          "description": "store:allow-delete -> Enables the delete command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-delete"
+          ]
+        },
+        {
+          "description": "store:allow-entries -> Enables the entries command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-entries"
+          ]
+        },
+        {
+          "description": "store:allow-get -> Enables the get command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stor
