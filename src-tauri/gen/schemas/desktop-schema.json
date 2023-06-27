@@ -1235,4 +1235,26 @@
           "description": "shell:deny-open -> Denies the open command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "s
+            "shell:deny-open"
+          ]
+        },
+        {
+          "description": "shell:deny-stdin-write -> Denies the stdin_write command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "shell:deny-stdin-write"
+          ]
+        },
+        {
+          "type": "string",
+          "enum": [
+            "store:default"
+          ]
+        },
+        {
+          "description": "store:allow-clear -> Enables the clear command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-clear"
+          ]
+        },
