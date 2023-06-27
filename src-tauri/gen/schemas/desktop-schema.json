@@ -1276,4 +1276,23 @@
           "description": "store:allow-get -> Enables the get command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "stor
+            "store:allow-get"
+          ]
+        },
+        {
+          "description": "store:allow-has -> Enables the has command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-has"
+          ]
+        },
+        {
+          "description": "store:allow-keys -> Enables the keys command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-keys"
+          ]
+        },
+        {
+          "description": "store:allow-length -> Enables the length command without any pre-configured scope.",
+          "type"
