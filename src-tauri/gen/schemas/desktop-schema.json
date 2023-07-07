@@ -1295,4 +1295,24 @@
         },
         {
           "description": "store:allow-length -> Enables the length command without any pre-configured scope.",
-          "type"
+          "type": "string",
+          "enum": [
+            "store:allow-length"
+          ]
+        },
+        {
+          "description": "store:allow-load -> Enables the load command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-load"
+          ]
+        },
+        {
+          "description": "store:allow-reset -> Enables the reset command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-reset"
+          ]
+        },
+        {
+          "description": "store:a
