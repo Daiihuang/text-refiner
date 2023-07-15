@@ -1350,4 +1350,25 @@
           ]
         },
         {
-          "description": "store:deny-entries -> Denies the entries command without any p
+          "description": "store:deny-entries -> Denies the entries command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-entries"
+          ]
+        },
+        {
+          "description": "store:deny-get -> Denies the get command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-get"
+          ]
+        },
+        {
+          "description": "store:deny-has -> Denies the has command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-has"
+          ]
+        },
+        {
+          "de
