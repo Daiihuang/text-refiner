@@ -1333,4 +1333,21 @@
           "type": "string",
           "enum": [
             "store:allow-values"
- 
+          ]
+        },
+        {
+          "description": "store:deny-clear -> Denies the clear command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-clear"
+          ]
+        },
+        {
+          "description": "store:deny-delete -> Denies the delete command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-delete"
+          ]
+        },
+        {
+          "description": "store:deny-entries -> Denies the entries command without any p
