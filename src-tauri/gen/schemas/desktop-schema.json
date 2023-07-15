@@ -1315,4 +1315,22 @@
           ]
         },
         {
-          "description": "store:a
+          "description": "store:allow-save -> Enables the save command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-save"
+          ]
+        },
+        {
+          "description": "store:allow-set -> Enables the set command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-set"
+          ]
+        },
+        {
+          "description": "store:allow-values -> Enables the values command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:allow-values"
+ 
