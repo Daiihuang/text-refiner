@@ -1390,4 +1390,23 @@
           "enum": [
             "store:deny-load"
           ]
-      
+        },
+        {
+          "description": "store:deny-reset -> Denies the reset command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-reset"
+          ]
+        },
+        {
+          "description": "store:deny-save -> Denies the save command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-save"
+          ]
+        },
+        {
+          "description": "store:deny-set -> Denies the set command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-
