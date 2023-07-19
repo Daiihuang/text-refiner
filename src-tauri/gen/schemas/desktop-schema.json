@@ -1371,4 +1371,23 @@
           ]
         },
         {
-          "de
+          "description": "store:deny-keys -> Denies the keys command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-keys"
+          ]
+        },
+        {
+          "description": "store:deny-length -> Denies the length command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-length"
+          ]
+        },
+        {
+          "description": "store:deny-load -> Denies the load command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "store:deny-load"
+          ]
+      
