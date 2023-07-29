@@ -1431,4 +1431,20 @@
           "enum": [
             "stronghold:allow-create-client"
           ]
- 
+        },
+        {
+          "description": "stronghold:allow-destroy -> Enables the destroy command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:allow-destroy"
+          ]
+        },
+        {
+          "description": "stronghold:allow-execute-procedure -> Enables the execute_procedure command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:allow-execute-procedure"
+          ]
+        },
+        {
+          "description": "stronghold:allow-get-store-
