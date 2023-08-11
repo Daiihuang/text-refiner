@@ -1447,4 +1447,19 @@
           ]
         },
         {
-          "description": "stronghold:allow-get-store-
+          "description": "stronghold:allow-get-store-record -> Enables the get_store_record command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:allow-get-store-record"
+          ]
+        },
+        {
+          "description": "stronghold:allow-initialize -> Enables the initialize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:allow-initialize"
+          ]
+        },
+        {
+          "description": "stronghold:allow-load-client -> Enables the load_client command without any pre-configured scope.",
+  
