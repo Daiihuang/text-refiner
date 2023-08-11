@@ -1462,4 +1462,19 @@
         },
         {
           "description": "stronghold:allow-load-client -> Enables the load_client command without any pre-configured scope.",
-  
+          "type": "string",
+          "enum": [
+            "stronghold:allow-load-client"
+          ]
+        },
+        {
+          "description": "stronghold:allow-remove-secret -> Enables the remove_secret command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:allow-remove-secret"
+          ]
+        },
+        {
+          "description": "stronghold:allow-remove-store-record -> Enables the remove_store_record command without any pre-configured scope.",
+          "type": "string",
+          "enu
