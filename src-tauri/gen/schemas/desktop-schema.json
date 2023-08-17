@@ -1545,4 +1545,18 @@
           ]
         },
         {
-   
+          "description": "stronghold:deny-remove-secret -> Denies the remove_secret command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-remove-secret"
+          ]
+        },
+        {
+          "description": "stronghold:deny-remove-store-record -> Denies the remove_store_record command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-remove-store-record"
+          ]
+        },
+        {
+          "description": "stronghold:deny-save -> Denies the save command 
