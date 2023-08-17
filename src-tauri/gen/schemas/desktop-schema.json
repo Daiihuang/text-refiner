@@ -1577,4 +1577,24 @@
           "type": "string",
           "enum": [
             "stronghold:deny-save-store-record"
-     
+          ]
+        },
+        {
+          "description": "tray:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "tray:default"
+          ]
+        },
+        {
+          "description": "tray:allow-get-by-id -> Enables the get_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-get-by-id"
+          ]
+        },
+        {
+          "description": "tray:allow-new -> Enables the new command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            
