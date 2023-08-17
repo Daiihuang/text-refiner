@@ -1477,4 +1477,23 @@
         {
           "description": "stronghold:allow-remove-store-record -> Enables the remove_store_record command without any pre-configured scope.",
           "type": "string",
-          "enu
+          "enum": [
+            "stronghold:allow-remove-store-record"
+          ]
+        },
+        {
+          "description": "stronghold:allow-save -> Enables the save command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:allow-save"
+          ]
+        },
+        {
+          "description": "stronghold:allow-save-secret -> Enables the save_secret command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:allow-save-secret"
+          ]
+        },
+        {
+          "description": "stronghold:allow-save-store-record -
