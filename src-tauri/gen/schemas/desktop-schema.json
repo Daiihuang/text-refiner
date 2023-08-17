@@ -1512,3 +1512,20 @@
         {
           "description": "stronghold:deny-destroy -> Denies the destroy command without any pre-configured scope.",
           "type": "string",
+          "enum": [
+            "stronghold:deny-destroy"
+          ]
+        },
+        {
+          "description": "stronghold:deny-execute-procedure -> Denies the execute_procedure command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-execute-procedure"
+          ]
+        },
+        {
+          "description": "stronghold:deny-get-store-record -> Denies the get_store_record command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-get-store-record"
+      
