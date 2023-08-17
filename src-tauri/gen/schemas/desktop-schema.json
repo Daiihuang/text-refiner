@@ -1559,4 +1559,22 @@
           ]
         },
         {
-          "description": "stronghold:deny-save -> Denies the save command 
+          "description": "stronghold:deny-save -> Denies the save command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-save"
+          ]
+        },
+        {
+          "description": "stronghold:deny-save-secret -> Denies the save_secret command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-save-secret"
+          ]
+        },
+        {
+          "description": "stronghold:deny-save-store-record -> Denies the save_store_record command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-save-store-record"
+     
