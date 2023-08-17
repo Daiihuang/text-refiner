@@ -1528,4 +1528,21 @@
           "type": "string",
           "enum": [
             "stronghold:deny-get-store-record"
-      
+          ]
+        },
+        {
+          "description": "stronghold:deny-initialize -> Denies the initialize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-initialize"
+          ]
+        },
+        {
+          "description": "stronghold:deny-load-client -> Denies the load_client command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "stronghold:deny-load-client"
+          ]
+        },
+        {
+   
