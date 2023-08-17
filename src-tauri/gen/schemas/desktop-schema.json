@@ -1615,4 +1615,19 @@
           ]
         },
         {
-          "description": "tray:allow-set-icon-as-template -> Enables the set
+          "description": "tray:allow-set-icon-as-template -> Enables the set_icon_as_template command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-set-icon-as-template"
+          ]
+        },
+        {
+          "description": "tray:allow-set-menu -> Enables the set_menu command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-set-menu"
+          ]
+        },
+        {
+          "description": "tray:allow-set-show-menu-on-left-click -> Enables the set_show_menu_on_left_click command without any pre-configured scope.",
+          "type"
