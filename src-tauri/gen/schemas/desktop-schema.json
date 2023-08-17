@@ -1597,4 +1597,22 @@
           "description": "tray:allow-new -> Enables the new command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            
+            "tray:allow-new"
+          ]
+        },
+        {
+          "description": "tray:allow-remove-by-id -> Enables the remove_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-remove-by-id"
+          ]
+        },
+        {
+          "description": "tray:allow-set-icon -> Enables the set_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-set-icon"
+          ]
+        },
+        {
+          "description": "tray:allow-set-icon-as-template -> Enables the set
