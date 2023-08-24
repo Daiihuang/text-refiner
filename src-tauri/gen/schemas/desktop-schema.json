@@ -1630,4 +1630,20 @@
         },
         {
           "description": "tray:allow-set-show-menu-on-left-click -> Enables the set_show_menu_on_left_click command without any pre-configured scope.",
-          "type"
+          "type": "string",
+          "enum": [
+            "tray:allow-set-show-menu-on-left-click"
+          ]
+        },
+        {
+          "description": "tray:allow-set-temp-dir-path -> Enables the set_temp_dir_path command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-set-temp-dir-path"
+          ]
+        },
+        {
+          "description": "tray:allow-set-title -> Enables the set_title command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow
