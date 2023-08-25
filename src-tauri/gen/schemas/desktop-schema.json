@@ -1664,4 +1664,21 @@
           ]
         },
         {
-          "description": "tray:deny-get-by-id -> Den
+          "description": "tray:deny-get-by-id -> Denies the get_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-get-by-id"
+          ]
+        },
+        {
+          "description": "tray:deny-new -> Denies the new command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-new"
+          ]
+        },
+        {
+          "description": "tray:deny-remove-by-id -> Denies the remove_by_id command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-rem
