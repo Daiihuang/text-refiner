@@ -1646,4 +1646,22 @@
           "description": "tray:allow-set-title -> Enables the set_title command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "tray:allow
+            "tray:allow-set-title"
+          ]
+        },
+        {
+          "description": "tray:allow-set-tooltip -> Enables the set_tooltip command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-set-tooltip"
+          ]
+        },
+        {
+          "description": "tray:allow-set-visible -> Enables the set_visible command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:allow-set-visible"
+          ]
+        },
+        {
+          "description": "tray:deny-get-by-id -> Den
