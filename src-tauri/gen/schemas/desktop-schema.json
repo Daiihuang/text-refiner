@@ -1681,4 +1681,22 @@
           "description": "tray:deny-remove-by-id -> Denies the remove_by_id command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "tray:deny-rem
+            "tray:deny-remove-by-id"
+          ]
+        },
+        {
+          "description": "tray:deny-set-icon -> Denies the set_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-icon"
+          ]
+        },
+        {
+          "description": "tray:deny-set-icon-as-template -> Denies the set_icon_as_template command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-icon-as-template"
+          ]
+        },
+        {
+          "description": "tray:de
