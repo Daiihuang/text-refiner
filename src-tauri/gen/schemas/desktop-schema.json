@@ -1699,4 +1699,18 @@
           ]
         },
         {
-          "description": "tray:de
+          "description": "tray:deny-set-menu -> Denies the set_menu command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-menu"
+          ]
+        },
+        {
+          "description": "tray:deny-set-show-menu-on-left-click -> Denies the set_show_menu_on_left_click command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-show-menu-on-left-click"
+          ]
+        },
+        {
+          "description": "tray:deny-set-temp-dir-path -> Denies the set_temp_dir_path 
