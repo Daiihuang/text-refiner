@@ -1713,4 +1713,22 @@
           ]
         },
         {
-          "description": "tray:deny-set-temp-dir-path -> Denies the set_temp_dir_path 
+          "description": "tray:deny-set-temp-dir-path -> Denies the set_temp_dir_path command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-temp-dir-path"
+          ]
+        },
+        {
+          "description": "tray:deny-set-title -> Denies the set_title command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-title"
+          ]
+        },
+        {
+          "description": "tray:deny-set-tooltip -> Denies the set_tooltip command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-tooltip"
+    
