@@ -1731,4 +1731,21 @@
           "type": "string",
           "enum": [
             "tray:deny-set-tooltip"
-    
+          ]
+        },
+        {
+          "description": "tray:deny-set-visible -> Denies the set_visible command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "tray:deny-set-visible"
+          ]
+        },
+        {
+          "description": "webview:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "webview:default"
+          ]
+        },
+        {
+          "description": "webview:allow-create-webview -> Enables the create_webview command without any pre-confi
