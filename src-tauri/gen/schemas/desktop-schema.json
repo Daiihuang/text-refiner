@@ -1748,4 +1748,20 @@
           ]
         },
         {
-          "description": "webview:allow-create-webview -> Enables the create_webview command without any pre-confi
+          "description": "webview:allow-create-webview -> Enables the create_webview command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-create-webview"
+          ]
+        },
+        {
+          "description": "webview:allow-create-webview-window -> Enables the create_webview_window command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-create-webview-window"
+          ]
+        },
+        {
+          "description": "webview:allow-internal-toggle-devtools -> Enables the internal_toggle_devtools command without any pre-configured scope.",
+          "type": "string",
+          "e
