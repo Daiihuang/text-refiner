@@ -1764,4 +1764,23 @@
         {
           "description": "webview:allow-internal-toggle-devtools -> Enables the internal_toggle_devtools command without any pre-configured scope.",
           "type": "string",
-          "e
+          "enum": [
+            "webview:allow-internal-toggle-devtools"
+          ]
+        },
+        {
+          "description": "webview:allow-print -> Enables the print command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-print"
+          ]
+        },
+        {
+          "description": "webview:allow-reparent -> Enables the reparent command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-reparent"
+          ]
+        },
+        {
+   
