@@ -1797,4 +1797,19 @@
           ]
         },
         {
-          "description": "webview:allow-set-webview-size -> Enables the set_webview_size com
+          "description": "webview:allow-set-webview-size -> Enables the set_webview_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-set-webview-size"
+          ]
+        },
+        {
+          "description": "webview:allow-set-webview-zoom -> Enables the set_webview_zoom command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-set-webview-zoom"
+          ]
+        },
+        {
+          "description": "webview:allow-webview-close -> Enables the webview_close command without any pre-configured scope.",
+          "type": "st
