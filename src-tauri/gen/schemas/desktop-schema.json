@@ -1783,4 +1783,18 @@
           ]
         },
         {
-   
+          "description": "webview:allow-set-webview-focus -> Enables the set_webview_focus command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-set-webview-focus"
+          ]
+        },
+        {
+          "description": "webview:allow-set-webview-position -> Enables the set_webview_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-set-webview-position"
+          ]
+        },
+        {
+          "description": "webview:allow-set-webview-size -> Enables the set_webview_size com
