@@ -1846,4 +1846,19 @@
           ]
         },
         {
-          "description": "webview:deny-internal-toggle-devtools -> Denies the i
+          "description": "webview:deny-internal-toggle-devtools -> Denies the internal_toggle_devtools command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-internal-toggle-devtools"
+          ]
+        },
+        {
+          "description": "webview:deny-print -> Denies the print command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-print"
+          ]
+        },
+        {
+          "description": "webview:deny-reparent -> Denies the reparent command without any pre-configured scope.",
+          "type": "str
