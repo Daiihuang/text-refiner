@@ -1812,4 +1812,22 @@
         },
         {
           "description": "webview:allow-webview-close -> Enables the webview_close command without any pre-configured scope.",
-          "type": "st
+          "type": "string",
+          "enum": [
+            "webview:allow-webview-close"
+          ]
+        },
+        {
+          "description": "webview:allow-webview-position -> Enables the webview_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-webview-position"
+          ]
+        },
+        {
+          "description": "webview:allow-webview-size -> Enables the webview_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:allow-webview-size"
+          ]
+       
