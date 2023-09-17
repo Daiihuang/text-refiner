@@ -1830,4 +1830,20 @@
           "enum": [
             "webview:allow-webview-size"
           ]
-       
+        },
+        {
+          "description": "webview:deny-create-webview -> Denies the create_webview command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-create-webview"
+          ]
+        },
+        {
+          "description": "webview:deny-create-webview-window -> Denies the create_webview_window command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-create-webview-window"
+          ]
+        },
+        {
+          "description": "webview:deny-internal-toggle-devtools -> Denies the i
