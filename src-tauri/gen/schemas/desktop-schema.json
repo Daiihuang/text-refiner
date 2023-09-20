@@ -1861,4 +1861,24 @@
         },
         {
           "description": "webview:deny-reparent -> Denies the reparent command without any pre-configured scope.",
-          "type": "str
+          "type": "string",
+          "enum": [
+            "webview:deny-reparent"
+          ]
+        },
+        {
+          "description": "webview:deny-set-webview-focus -> Denies the set_webview_focus command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-set-webview-focus"
+          ]
+        },
+        {
+          "description": "webview:deny-set-webview-position -> Denies the set_webview_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-set-webview-position"
+          ]
+        },
+        {
+          "desc
