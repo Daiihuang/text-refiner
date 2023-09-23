@@ -1895,4 +1895,21 @@
           ]
         },
         {
-          "description": "webview:deny-webview-close -> Denies the webview_close command without an
+          "description": "webview:deny-webview-close -> Denies the webview_close command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-webview-close"
+          ]
+        },
+        {
+          "description": "webview:deny-webview-position -> Denies the webview_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-webview-position"
+          ]
+        },
+        {
+          "description": "webview:deny-webview-size -> Denies the webview_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "webview:deny-
