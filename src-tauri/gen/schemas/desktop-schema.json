@@ -1912,4 +1912,22 @@
           "description": "webview:deny-webview-size -> Denies the webview_size command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "webview:deny-
+            "webview:deny-webview-size"
+          ]
+        },
+        {
+          "description": "window:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "window:default"
+          ]
+        },
+        {
+          "description": "window:allow-available-monitors -> Enables the available_monitors command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-available-monitors"
+          ]
+        },
+        {
+          "description": "window:allow-center -> Enables the center co
