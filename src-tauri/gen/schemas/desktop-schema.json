@@ -1930,4 +1930,23 @@
           ]
         },
         {
-          "description": "window:allow-center -> Enables the center co
+          "description": "window:allow-center -> Enables the center command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-center"
+          ]
+        },
+        {
+          "description": "window:allow-close -> Enables the close command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-close"
+          ]
+        },
+        {
+          "description": "window:allow-create -> Enables the create command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-create"
+          ]
+      
