@@ -1965,4 +1965,19 @@
           ]
         },
         {
-          "description": "window:allow-hide -> Enables t
+          "description": "window:allow-hide -> Enables the hide command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-hide"
+          ]
+        },
+        {
+          "description": "window:allow-inner-position -> Enables the inner_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-inner-position"
+          ]
+        },
+        {
+          "description": "window:allow-inner-size -> Enables the inner_size command without any pre-configured scope.",
+          "type": "strin
