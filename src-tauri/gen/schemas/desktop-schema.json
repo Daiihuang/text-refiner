@@ -2047,4 +2047,20 @@
           "enum": [
             "window:allow-is-minimized"
           ]
-      
+        },
+        {
+          "description": "window:allow-is-resizable -> Enables the is_resizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-resizable"
+          ]
+        },
+        {
+          "description": "window:allow-is-visible -> Enables the is_visible command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-visible"
+          ]
+        },
+        {
+          "description": "window:allow-maximize -> Enables the maximize command without any pre-configur
