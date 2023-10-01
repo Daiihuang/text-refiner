@@ -2014,4 +2014,20 @@
           ]
         },
         {
-          "description": "window:allow-is-fullscreen -> Enables
+          "description": "window:allow-is-fullscreen -> Enables the is_fullscreen command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-fullscreen"
+          ]
+        },
+        {
+          "description": "window:allow-is-maximizable -> Enables the is_maximizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-maximizable"
+          ]
+        },
+        {
+          "description": "window:allow-is-maximized -> Enables the is_maximized command without any pre-configured scope.",
+          "type": "string",
+  
