@@ -1980,4 +1980,22 @@
         },
         {
           "description": "window:allow-inner-size -> Enables the inner_size command without any pre-configured scope.",
-          "type": "strin
+          "type": "string",
+          "enum": [
+            "window:allow-inner-size"
+          ]
+        },
+        {
+          "description": "window:allow-internal-toggle-maximize -> Enables the internal_toggle_maximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-internal-toggle-maximize"
+          ]
+        },
+        {
+          "description": "window:allow-is-closable -> Enables the is_closable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-closable"
+          ]
+        }
