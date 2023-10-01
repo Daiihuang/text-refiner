@@ -2081,4 +2081,21 @@
           "type": "string",
           "enum": [
             "window:allow-outer-position"
-         
+          ]
+        },
+        {
+          "description": "window:allow-outer-size -> Enables the outer_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-outer-size"
+          ]
+        },
+        {
+          "description": "window:allow-primary-monitor -> Enables the primary_monitor command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-primary-monitor"
+          ]
+        },
+        {
+          "description": "window:allow-request-user-attention
