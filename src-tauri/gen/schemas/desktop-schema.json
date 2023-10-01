@@ -1949,4 +1949,20 @@
           "enum": [
             "window:allow-create"
           ]
-      
+        },
+        {
+          "description": "window:allow-current-monitor -> Enables the current_monitor command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-current-monitor"
+          ]
+        },
+        {
+          "description": "window:allow-destroy -> Enables the destroy command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-destroy"
+          ]
+        },
+        {
+          "description": "window:allow-hide -> Enables t
