@@ -2063,4 +2063,22 @@
           ]
         },
         {
-          "description": "window:allow-maximize -> Enables the maximize command without any pre-configur
+          "description": "window:allow-maximize -> Enables the maximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-maximize"
+          ]
+        },
+        {
+          "description": "window:allow-minimize -> Enables the minimize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-minimize"
+          ]
+        },
+        {
+          "description": "window:allow-outer-position -> Enables the outer_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-outer-position"
+         
