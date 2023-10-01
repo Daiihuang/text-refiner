@@ -1998,4 +1998,20 @@
           "enum": [
             "window:allow-is-closable"
           ]
-        }
+        },
+        {
+          "description": "window:allow-is-decorated -> Enables the is_decorated command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-decorated"
+          ]
+        },
+        {
+          "description": "window:allow-is-focused -> Enables the is_focused command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-focused"
+          ]
+        },
+        {
+          "description": "window:allow-is-fullscreen -> Enables
