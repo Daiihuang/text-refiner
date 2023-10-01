@@ -2030,4 +2030,21 @@
         {
           "description": "window:allow-is-maximized -> Enables the is_maximized command without any pre-configured scope.",
           "type": "string",
-  
+          "enum": [
+            "window:allow-is-maximized"
+          ]
+        },
+        {
+          "description": "window:allow-is-minimizable -> Enables the is_minimizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-minimizable"
+          ]
+        },
+        {
+          "description": "window:allow-is-minimized -> Enables the is_minimized command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-is-minimized"
+          ]
+      
