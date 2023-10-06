@@ -2098,4 +2098,18 @@
           ]
         },
         {
-          "description": "window:allow-request-user-attention
+          "description": "window:allow-request-user-attention -> Enables the request_user_attention command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-request-user-attention"
+          ]
+        },
+        {
+          "description": "window:allow-scale-factor -> Enables the scale_factor command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-scale-factor"
+          ]
+        },
+        {
+          "description": "window:allow-set-always-on-bottom -> Enables the set_always_on_bottom command without any pre-configured scop
