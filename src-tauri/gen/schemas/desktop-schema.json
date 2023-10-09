@@ -2129,4 +2129,19 @@
           "description": "window:allow-set-closable -> Enables the set_closable command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "
+            "window:allow-set-closable"
+          ]
+        },
+        {
+          "description": "window:allow-set-content-protected -> Enables the set_content_protected command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-content-protected"
+          ]
+        },
+        {
+          "description": "window:allow-set-cursor-grab -> Enables the set_cursor_grab command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-cursor-grab"
+          
