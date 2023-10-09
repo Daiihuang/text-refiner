@@ -2195,3 +2195,19 @@
             "window:allow-set-fullscreen"
           ]
         },
+        {
+          "description": "window:allow-set-icon -> Enables the set_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-icon"
+          ]
+        },
+        {
+          "description": "window:allow-set-ignore-cursor-events -> Enables the set_ignore_cursor_events command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-ignore-cursor-events"
+          ]
+        },
+        {
+          "description": "window:all
