@@ -2161,4 +2161,19 @@
           ]
         },
         {
-          "description": "window:allow-set-cursor-visible -> Enables the set_cursor_vi
+          "description": "window:allow-set-cursor-visible -> Enables the set_cursor_visible command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-cursor-visible"
+          ]
+        },
+        {
+          "description": "window:allow-set-decorations -> Enables the set_decorations command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-decorations"
+          ]
+        },
+        {
+          "description": "window:allow-set-effects -> Enables the set_effects command without any pre-configured scope.",
+          
