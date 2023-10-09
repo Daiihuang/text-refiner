@@ -2210,4 +2210,18 @@
           ]
         },
         {
-          "description": "window:all
+          "description": "window:allow-set-max-size -> Enables the set_max_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-max-size"
+          ]
+        },
+        {
+          "description": "window:allow-set-maximizable -> Enables the set_maximizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-maximizable"
+          ]
+        },
+        {
+          "description": "window:allow-set-min-size -> Enables the set_min_size command without any pre-configured 
