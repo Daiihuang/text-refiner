@@ -2112,4 +2112,21 @@
           ]
         },
         {
-          "description": "window:allow-set-always-on-bottom -> Enables the set_always_on_bottom command without any pre-configured scop
+          "description": "window:allow-set-always-on-bottom -> Enables the set_always_on_bottom command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-always-on-bottom"
+          ]
+        },
+        {
+          "description": "window:allow-set-always-on-top -> Enables the set_always_on_top command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-always-on-top"
+          ]
+        },
+        {
+          "description": "window:allow-set-closable -> Enables the set_closable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "
