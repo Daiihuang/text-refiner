@@ -2144,4 +2144,21 @@
           "type": "string",
           "enum": [
             "window:allow-set-cursor-grab"
-          
+          ]
+        },
+        {
+          "description": "window:allow-set-cursor-icon -> Enables the set_cursor_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-cursor-icon"
+          ]
+        },
+        {
+          "description": "window:allow-set-cursor-position -> Enables the set_cursor_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-cursor-position"
+          ]
+        },
+        {
+          "description": "window:allow-set-cursor-visible -> Enables the set_cursor_vi
