@@ -2176,4 +2176,22 @@
         },
         {
           "description": "window:allow-set-effects -> Enables the set_effects command without any pre-configured scope.",
-          
+          "type": "string",
+          "enum": [
+            "window:allow-set-effects"
+          ]
+        },
+        {
+          "description": "window:allow-set-focus -> Enables the set_focus command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-focus"
+          ]
+        },
+        {
+          "description": "window:allow-set-fullscreen -> Enables the set_fullscreen command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-fullscreen"
+          ]
+        },
