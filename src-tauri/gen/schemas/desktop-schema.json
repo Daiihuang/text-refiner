@@ -2224,4 +2224,21 @@
           ]
         },
         {
-          "description": "window:allow-set-min-size -> Enables the set_min_size command without any pre-configured 
+          "description": "window:allow-set-min-size -> Enables the set_min_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-min-size"
+          ]
+        },
+        {
+          "description": "window:allow-set-minimizable -> Enables the set_minimizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-minimizable"
+          ]
+        },
+        {
+          "description": "window:allow-set-position -> Enables the set_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allo
