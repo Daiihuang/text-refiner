@@ -2276,4 +2276,22 @@
           "description": "window:allow-set-skip-taskbar -> Enables the set_skip_taskbar command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "window:allo
+            "window:allow-set-skip-taskbar"
+          ]
+        },
+        {
+          "description": "window:allow-set-title -> Enables the set_title command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-title"
+          ]
+        },
+        {
+          "description": "window:allow-set-visible-on-all-workspaces -> Enables the set_visible_on_all_workspaces command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-visible-on-all-workspaces"
+          ]
+        },
+        {
+          "description": 
