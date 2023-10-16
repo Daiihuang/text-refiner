@@ -2259,4 +2259,21 @@
           ]
         },
         {
-          "description": "window:allow-set-s
+          "description": "window:allow-set-shadow -> Enables the set_shadow command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-shadow"
+          ]
+        },
+        {
+          "description": "window:allow-set-size -> Enables the set_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-size"
+          ]
+        },
+        {
+          "description": "window:allow-set-skip-taskbar -> Enables the set_skip_taskbar command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allo
