@@ -2294,4 +2294,18 @@
           ]
         },
         {
-          "description": 
+          "description": "window:allow-show -> Enables the show command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-show"
+          ]
+        },
+        {
+          "description": "window:allow-start-dragging -> Enables the start_dragging command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-start-dragging"
+          ]
+        },
+        {
+          "description": "window:allow-start-resize-dragging -> Enables the start_resize_dragging command wi
