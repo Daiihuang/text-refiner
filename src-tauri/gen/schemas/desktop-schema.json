@@ -2343,4 +2343,21 @@
           ]
         },
         {
-          "description": "window:allow-unminimize -> Enables the un
+          "description": "window:allow-unminimize -> Enables the unminimize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-unminimize"
+          ]
+        },
+        {
+          "description": "window:deny-available-monitors -> Denies the available_monitors command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-available-monitors"
+          ]
+        },
+        {
+          "description": "window:deny-center -> Denies the center command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+       
