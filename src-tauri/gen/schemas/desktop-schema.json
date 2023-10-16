@@ -2326,4 +2326,21 @@
           "type": "string",
           "enum": [
             "window:allow-title"
- 
+          ]
+        },
+        {
+          "description": "window:allow-toggle-maximize -> Enables the toggle_maximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-toggle-maximize"
+          ]
+        },
+        {
+          "description": "window:allow-unmaximize -> Enables the unmaximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-unmaximize"
+          ]
+        },
+        {
+          "description": "window:allow-unminimize -> Enables the un
