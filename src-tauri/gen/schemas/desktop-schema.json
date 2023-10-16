@@ -2360,4 +2360,22 @@
           "description": "window:deny-center -> Denies the center command without any pre-configured scope.",
           "type": "string",
           "enum": [
-       
+            "window:deny-center"
+          ]
+        },
+        {
+          "description": "window:deny-close -> Denies the close command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-close"
+          ]
+        },
+        {
+          "description": "window:deny-create -> Denies the create command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-create"
+          ]
+        },
+        {
+          "description": "window:deny-current-monitor -> Denies the current_monitor c
