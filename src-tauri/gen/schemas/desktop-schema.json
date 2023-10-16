@@ -2308,4 +2308,22 @@
           ]
         },
         {
-          "description": "window:allow-start-resize-dragging -> Enables the start_resize_dragging command wi
+          "description": "window:allow-start-resize-dragging -> Enables the start_resize_dragging command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-start-resize-dragging"
+          ]
+        },
+        {
+          "description": "window:allow-theme -> Enables the theme command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-theme"
+          ]
+        },
+        {
+          "description": "window:allow-title -> Enables the title command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-title"
+ 
