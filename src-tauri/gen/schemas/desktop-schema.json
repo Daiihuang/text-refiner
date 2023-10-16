@@ -2241,4 +2241,22 @@
           "description": "window:allow-set-position -> Enables the set_position command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "window:allo
+            "window:allow-set-position"
+          ]
+        },
+        {
+          "description": "window:allow-set-progress-bar -> Enables the set_progress_bar command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-progress-bar"
+          ]
+        },
+        {
+          "description": "window:allow-set-resizable -> Enables the set_resizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:allow-set-resizable"
+          ]
+        },
+        {
+          "description": "window:allow-set-s
