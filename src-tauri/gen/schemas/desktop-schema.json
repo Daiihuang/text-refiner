@@ -2397,4 +2397,20 @@
           "enum": [
             "window:deny-hide"
           ]
-        }
+        },
+        {
+          "description": "window:deny-inner-position -> Denies the inner_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-inner-position"
+          ]
+        },
+        {
+          "description": "window:deny-inner-size -> Denies the inner_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-inner-size"
+          ]
+        },
+        {
+          "description": "window:deny-internal-toggle-maximize -> Denies the int
