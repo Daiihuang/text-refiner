@@ -2413,4 +2413,20 @@
           ]
         },
         {
-          "description": "window:deny-internal-toggle-maximize -> Denies the int
+          "description": "window:deny-internal-toggle-maximize -> Denies the internal_toggle_maximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-internal-toggle-maximize"
+          ]
+        },
+        {
+          "description": "window:deny-is-closable -> Denies the is_closable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-closable"
+          ]
+        },
+        {
+          "description": "window:deny-is-decorated -> Denies the is_decorated command without any pre-configured scope.",
+          "type": "string",
+          "enum"
