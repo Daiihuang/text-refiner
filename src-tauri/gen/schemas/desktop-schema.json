@@ -2429,4 +2429,23 @@
         {
           "description": "window:deny-is-decorated -> Denies the is_decorated command without any pre-configured scope.",
           "type": "string",
-          "enum"
+          "enum": [
+            "window:deny-is-decorated"
+          ]
+        },
+        {
+          "description": "window:deny-is-focused -> Denies the is_focused command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-focused"
+          ]
+        },
+        {
+          "description": "window:deny-is-fullscreen -> Denies the is_fullscreen command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-fullscreen"
+          ]
+        },
+        {
+          "description": "window:d
