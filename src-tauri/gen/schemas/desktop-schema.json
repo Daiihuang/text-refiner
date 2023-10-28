@@ -2448,4 +2448,18 @@
           ]
         },
         {
-          "description": "window:d
+          "description": "window:deny-is-maximizable -> Denies the is_maximizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-maximizable"
+          ]
+        },
+        {
+          "description": "window:deny-is-maximized -> Denies the is_maximized command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-maximized"
+          ]
+        },
+        {
+          "description": "window:deny-is-minimizable -> Denies the is_minimizable command without an
