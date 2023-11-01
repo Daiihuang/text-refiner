@@ -2462,4 +2462,21 @@
           ]
         },
         {
-          "description": "window:deny-is-minimizable -> Denies the is_minimizable command without an
+          "description": "window:deny-is-minimizable -> Denies the is_minimizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-minimizable"
+          ]
+        },
+        {
+          "description": "window:deny-is-minimized -> Denies the is_minimized command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-minimized"
+          ]
+        },
+        {
+          "description": "window:deny-is-resizable -> Denies the is_resizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-r
