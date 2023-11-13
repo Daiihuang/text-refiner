@@ -2497,4 +2497,24 @@
           ]
         },
         {
-          "description": "window:deny-minimize -> Denies the minimize command without any pre-con
+          "description": "window:deny-minimize -> Denies the minimize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-minimize"
+          ]
+        },
+        {
+          "description": "window:deny-outer-position -> Denies the outer_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-outer-position"
+          ]
+        },
+        {
+          "description": "window:deny-outer-size -> Denies the outer_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-outer-size"
+          ]
+        },
+        
