@@ -2479,4 +2479,22 @@
           "description": "window:deny-is-resizable -> Denies the is_resizable command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "window:deny-is-r
+            "window:deny-is-resizable"
+          ]
+        },
+        {
+          "description": "window:deny-is-visible -> Denies the is_visible command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-is-visible"
+          ]
+        },
+        {
+          "description": "window:deny-maximize -> Denies the maximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-maximize"
+          ]
+        },
+        {
+          "description": "window:deny-minimize -> Denies the minimize command without any pre-con
