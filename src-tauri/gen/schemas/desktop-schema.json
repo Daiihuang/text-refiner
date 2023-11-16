@@ -2517,4 +2517,19 @@
             "window:deny-outer-size"
           ]
         },
-        
+        {
+          "description": "window:deny-primary-monitor -> Denies the primary_monitor command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-primary-monitor"
+          ]
+        },
+        {
+          "description": "window:deny-request-user-attention -> Denies the request_user_attention command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-request-user-attention"
+          ]
+        },
+        {
+          "description": "window:deny-scale-factor -> Deni
