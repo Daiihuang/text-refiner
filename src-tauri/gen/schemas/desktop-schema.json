@@ -2566,3 +2566,19 @@
             "window:deny-set-content-protected"
           ]
         },
+        {
+          "description": "window:deny-set-cursor-grab -> Denies the set_cursor_grab command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-cursor-grab"
+          ]
+        },
+        {
+          "description": "window:deny-set-cursor-icon -> Denies the set_cursor_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-cursor-icon"
+          ]
+        },
+        {
+          "description": "window:deny-set-cursor-position -> Denies the set_cursor_posi
