@@ -2547,4 +2547,22 @@
         },
         {
           "description": "window:deny-set-always-on-top -> Denies the set_always_on_top command without any pre-configured scope.",
-          "type": 
+          "type": "string",
+          "enum": [
+            "window:deny-set-always-on-top"
+          ]
+        },
+        {
+          "description": "window:deny-set-closable -> Denies the set_closable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-closable"
+          ]
+        },
+        {
+          "description": "window:deny-set-content-protected -> Denies the set_content_protected command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-content-protected"
+          ]
+        },
