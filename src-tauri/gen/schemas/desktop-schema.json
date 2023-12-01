@@ -2581,4 +2581,20 @@
           ]
         },
         {
-          "description": "window:deny-set-cursor-position -> Denies the set_cursor_posi
+          "description": "window:deny-set-cursor-position -> Denies the set_cursor_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-cursor-position"
+          ]
+        },
+        {
+          "description": "window:deny-set-cursor-visible -> Denies the set_cursor_visible command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-cursor-visible"
+          ]
+        },
+        {
+          "description": "window:deny-set-decorations -> Denies the set_decorations command without any pre-configured scope.",
+          "type": "string",
+          "en
