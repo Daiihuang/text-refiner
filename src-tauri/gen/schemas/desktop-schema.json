@@ -2597,4 +2597,23 @@
         {
           "description": "window:deny-set-decorations -> Denies the set_decorations command without any pre-configured scope.",
           "type": "string",
-          "en
+          "enum": [
+            "window:deny-set-decorations"
+          ]
+        },
+        {
+          "description": "window:deny-set-effects -> Denies the set_effects command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-effects"
+          ]
+        },
+        {
+          "description": "window:deny-set-focus -> Denies the set_focus command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-focus"
+          ]
+        },
+        {
+          "description": "window:deny-set-f
