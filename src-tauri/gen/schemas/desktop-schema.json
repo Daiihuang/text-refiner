@@ -2630,4 +2630,21 @@
           ]
         },
         {
-          "description": "window:deny-set-ignore-cursor-events -> Denies the set_ignore_cursor_events command
+          "description": "window:deny-set-ignore-cursor-events -> Denies the set_ignore_cursor_events command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-ignore-cursor-events"
+          ]
+        },
+        {
+          "description": "window:deny-set-max-size -> Denies the set_max_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-max-size"
+          ]
+        },
+        {
+          "description": "window:deny-set-maximizable -> Denies the set_maximizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny
