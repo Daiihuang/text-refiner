@@ -2616,4 +2616,18 @@
           ]
         },
         {
-          "description": "window:deny-set-f
+          "description": "window:deny-set-fullscreen -> Denies the set_fullscreen command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-fullscreen"
+          ]
+        },
+        {
+          "description": "window:deny-set-icon -> Denies the set_icon command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-icon"
+          ]
+        },
+        {
+          "description": "window:deny-set-ignore-cursor-events -> Denies the set_ignore_cursor_events command
