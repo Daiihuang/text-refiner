@@ -2647,4 +2647,22 @@
           "description": "window:deny-set-maximizable -> Denies the set_maximizable command without any pre-configured scope.",
           "type": "string",
           "enum": [
-            "window:deny
+            "window:deny-set-maximizable"
+          ]
+        },
+        {
+          "description": "window:deny-set-min-size -> Denies the set_min_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-min-size"
+          ]
+        },
+        {
+          "description": "window:deny-set-minimizable -> Denies the set_minimizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-minimizable"
+          ]
+        },
+        {
+          "description": "window:deny-set-position -> Den
