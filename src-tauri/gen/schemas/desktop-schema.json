@@ -2665,4 +2665,18 @@
           ]
         },
         {
-          "description": "window:deny-set-position -> Den
+          "description": "window:deny-set-position -> Denies the set_position command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-position"
+          ]
+        },
+        {
+          "description": "window:deny-set-progress-bar -> Denies the set_progress_bar command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-progress-bar"
+          ]
+        },
+        {
+          "description": "window:deny-set-resizable -> Denies the set_resizable command without any pre-configured scope."
