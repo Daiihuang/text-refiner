@@ -2679,4 +2679,25 @@
           ]
         },
         {
-          "description": "window:deny-set-resizable -> Denies the set_resizable command without any pre-configured scope."
+          "description": "window:deny-set-resizable -> Denies the set_resizable command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-resizable"
+          ]
+        },
+        {
+          "description": "window:deny-set-shadow -> Denies the set_shadow command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-shadow"
+          ]
+        },
+        {
+          "description": "window:deny-set-size -> Denies the set_size command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-size"
+          ]
+        },
+        {
+        
