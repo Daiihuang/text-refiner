@@ -2700,4 +2700,18 @@
           ]
         },
         {
-        
+          "description": "window:deny-set-skip-taskbar -> Denies the set_skip_taskbar command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-skip-taskbar"
+          ]
+        },
+        {
+          "description": "window:deny-set-title -> Denies the set_title command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-title"
+          ]
+        },
+        {
+          "description": "window:deny-set-visible-on-all-workspaces -> Denies 
