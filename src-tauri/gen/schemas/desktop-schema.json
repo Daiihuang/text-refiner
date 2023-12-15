@@ -2714,4 +2714,19 @@
           ]
         },
         {
-          "description": "window:deny-set-visible-on-all-workspaces -> Denies 
+          "description": "window:deny-set-visible-on-all-workspaces -> Denies the set_visible_on_all_workspaces command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-set-visible-on-all-workspaces"
+          ]
+        },
+        {
+          "description": "window:deny-show -> Denies the show command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-show"
+          ]
+        },
+        {
+          "description": "window:deny-start-dragging -> Denies the start_dragging command without any pre-configured scope.",
+          "type": "strin
