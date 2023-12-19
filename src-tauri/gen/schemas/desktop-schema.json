@@ -2747,4 +2747,20 @@
           "enum": [
             "window:deny-theme"
           ]
-        
+        },
+        {
+          "description": "window:deny-title -> Denies the title command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-title"
+          ]
+        },
+        {
+          "description": "window:deny-toggle-maximize -> Denies the toggle_maximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-toggle-maximize"
+          ]
+        },
+        {
+          "description": "window:deny-unmaximize -> Denies the unmaximize command witho
