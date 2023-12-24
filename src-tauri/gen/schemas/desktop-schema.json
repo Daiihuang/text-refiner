@@ -2763,4 +2763,26 @@
           ]
         },
         {
-          "description": "window:deny-unmaximize -> Denies the unmaximize command witho
+          "description": "window:deny-unmaximize -> Denies the unmaximize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-unmaximize"
+          ]
+        },
+        {
+          "description": "window:deny-unminimize -> Denies the unminimize command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "window:deny-unminimize"
+          ]
+        }
+      ]
+    },
+    "Value": {
+      "description": "All supported ACL values.",
+      "anyOf": [
+        {
+          "description": "Represents a null JSON value.",
+          "type": "null"
+        },
+     
