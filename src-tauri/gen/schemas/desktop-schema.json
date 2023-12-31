@@ -2866,4 +2866,23 @@
         {
           "description": "iOS.",
           "type": "string",
-          "
+          "enum": [
+            "iOS"
+          ]
+        }
+      ]
+    },
+    "ShellAllowedArg": {
+      "description": "A command argument allowed to be executed by the webview API.",
+      "anyOf": [
+        {
+          "description": "A non-configurable argument that is passed to the command in the order it was specified.",
+          "type": "string"
+        },
+        {
+          "description": "A variable that is set while calling the command from the webview API.",
+          "type": "object",
+          "required": [
+            "validator"
+          ],
+          "p
