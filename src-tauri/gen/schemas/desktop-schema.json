@@ -2885,4 +2885,15 @@
           "required": [
             "validator"
           ],
-          "p
+          "properties": {
+            "validator": {
+              "description": "[regex] validator to require passed values to conform to an expected input.\n\nThis will require the argument value passed to this variable to match the `validator` regex before it will be executed.\n\n[regex]: https://docs.rs/regex/latest/regex/#syntax",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "ShellAllowedArgs": {
+      "description": "A set of command arguments a
