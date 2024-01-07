@@ -2903,4 +2903,13 @@
           "type": "boolean"
         },
         {
-          "description": "A specific set of [`ShellAllowedArg`] that are valid to call fo
+          "description": "A specific set of [`ShellAllowedArg`] that are valid to call for the command configuration.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ShellAllowedArg"
+          }
+        }
+      ]
+    }
+  }
+}

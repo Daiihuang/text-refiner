@@ -1,0 +1,424 @@
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CapabilityFile",
+  "description": "Capability formats accepted in a capability file.",
+  "anyOf": [
+    {
+      "description": "A single capability.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/Capability"
+        }
+      ]
+    },
+    {
+      "description": "A list of capabilities.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/Capability"
+      }
+    },
+    {
+      "description": "A list of capabilities.",
+      "type": "object",
+      "required": [
+        "capabilities"
+      ],
+      "properties": {
+        "capabilities": {
+          "description": "The list of capabilities.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Capability"
+          }
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "Capability": {
+      "description": "a grouping and boundary mechanism developers can use to separate windows or plugins functionality from each other at runtime.\n\nIf a window is not matching any capability then it has no access to the IPC layer at all.\n\nThis can be done to create trust groups and reduce impact of vulnerabilities in certain plugins or windows. Windows can be added to a capability by exact name or glob patterns like *, admin-* or main-window.",
+      "type": "object",
+      "required": [
+        "identifier",
+        "permissions"
+      ],
+      "properties": {
+        "identifier": {
+          "description": "Identifier of the capability.",
+          "type": "string"
+        },
+        "description": {
+          "description": "Description of the capability.",
+          "default": "",
+          "type": "string"
+        },
+        "remote": {
+          "description": "Configure remote URLs that can use the capability permissions.",
+          "anyOf": [
+            {
+              "$ref": "#/definitions/CapabilityRemote"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "local": {
+          "description": "Whether this capability is enabled for local app URLs or not. Defaults to `true`.",
+          "default": true,
+          "type": "boolean"
+        },
+        "windows": {
+          "description": "List of windows that uses this capability. Can be a glob pattern.\n\nOn multiwebview windows, prefer [`Self::webviews`] for a fine grained access control.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "webviews": {
+          "description": "List of webviews that uses this capability. Can be a glob pattern.\n\nThis is only required when using on multiwebview contexts, by default all child webviews of a window that matches [`Self::windows`] are linked.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "permissions": {
+          "description": "List of permissions attached to this capability. Must include the plugin name as prefix in the form of `${plugin-name}:${permission-name}`.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PermissionEntry"
+          }
+        },
+        "platforms": {
+          "description": "Target platforms this capability applies. By default all platforms are affected by this capability.",
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/definitions/Target"
+          }
+        }
+      }
+    },
+    "CapabilityRemote": {
+      "description": "Configuration for remote URLs that are associated with the capability.",
+      "type": "object",
+      "required": [
+        "urls"
+      ],
+      "properties": {
+        "urls": {
+          "description": "Remote domains this capability refers to using the [URLPattern standard](https://urlpattern.spec.whatwg.org/).\n\n# Examples\n\n- \"https://*.mydomain.dev\": allows subdomains of mydomain.dev - \"https://mydomain.dev/api/*\": allows any subpath of mydomain.dev/api",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "PermissionEntry": {
+      "description": "An entry for a permission value in a [`Capability`] can be either a raw permission [`Identifier`] or an object that references a permission and extends its scope.",
+      "anyOf": [
+        {
+          "description": "Reference a permission or permission set by identifier.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/Identifier"
+            }
+          ]
+        },
+        {
+          "description": "Reference a permission or permission set by identifier and extends its scope.",
+          "type": "object",
+          "oneOf": [
+            {
+              "type": "object",
+              "required": [
+                "identifier"
+              ],
+              "properties": {
+                "identifier": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "shell:default"
+                      ]
+                    },
+                    {
+                      "description": "shell:allow-execute -> Enables the execute command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:allow-execute"
+                      ]
+                    },
+                    {
+                      "description": "shell:allow-kill -> Enables the kill command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:allow-kill"
+                      ]
+                    },
+                    {
+                      "description": "shell:allow-open -> Enables the open command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:allow-open"
+                      ]
+                    },
+                    {
+                      "description": "shell:allow-stdin-write -> Enables the stdin_write command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:allow-stdin-write"
+                      ]
+                    },
+                    {
+                      "description": "shell:deny-execute -> Denies the execute command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-execute"
+                      ]
+                    },
+                    {
+                      "description": "shell:deny-kill -> Denies the kill command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-kill"
+                      ]
+                    },
+                    {
+                      "description": "shell:deny-open -> Denies the open command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-open"
+                      ]
+                    },
+                    {
+                      "description": "shell:deny-stdin-write -> Denies the stdin_write command without any pre-configured scope.",
+                      "type": "string",
+                      "enum": [
+                        "shell:deny-stdin-write"
+                      ]
+                    }
+                  ]
+                },
+                "allow": {
+                  "items": {
+                    "title": "Entry",
+                    "description": "A command allowed to be executed by the webview API.",
+                    "type": "object",
+                    "required": [
+                      "args",
+                      "cmd",
+                      "name",
+                      "sidecar"
+                    ],
+                    "properties": {
+                      "args": {
+                        "description": "The allowed arguments for the command execution.",
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/ShellAllowedArgs"
+                          }
+                        ]
+                      },
+                      "cmd": {
+                        "description": "The command name. It can start with a variable that resolves to a system base directory. The variables are: `$AUDIO`, `$CACHE`, `$CONFIG`, `$DATA`, `$LOCALDATA`, `$DESKTOP`, `$DOCUMENT`, `$DOWNLOAD`, `$EXE`, `$FONT`, `$HOME`, `$PICTURE`, `$PUBLIC`, `$RUNTIME`, `$TEMPLATE`, `$VIDEO`, `$RESOURCE`, `$APP`, `$LOG`, `$TEMP`, `$APPCONFIG`, `$APPDATA`, `$APPLOCALDATA`, `$APPCACHE`, `$APPLOG`.",
+                        "type": "string"
+                      },
+                      "name": {
+                        "description": "The name for this allowed shell command configuration.\n\nThis name will be used inside of the webview API to call this command along with any specified arguments.",
+                        "type": "string"
+                      },
+                      "sidecar": {
+                        "description": "If this command is a sidecar command.",
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                },
+                "deny": {
+                  "items": {
+                    "title": "Entry",
+                    "description": "A command allowed to be executed by the webview API.",
+                    "type": "object",
+                    "required": [
+                      "args",
+                      "cmd",
+                      "name",
+                      "sidecar"
+                    ],
+                    "properties": {
+                      "args": {
+                        "description": "The allowed arguments for the command execution.",
+                        "allOf": [
+                          {
+                            "$ref": "#/definitions/ShellAllowedArgs"
+                          }
+                        ]
+                      },
+                      "cmd": {
+                        "description": "The command name. It can start with a variable that resolves to a system base directory. The variables are: `$AUDIO`, `$CACHE`, `$CONFIG`, `$DATA`, `$LOCALDATA`, `$DESKTOP`, `$DOCUMENT`, `$DOWNLOAD`, `$EXE`, `$FONT`, `$HOME`, `$PICTURE`, `$PUBLIC`, `$RUNTIME`, `$TEMPLATE`, `$VIDEO`, `$RESOURCE`, `$APP`, `$LOG`, `$TEMP`, `$APPCONFIG`, `$APPDATA`, `$APPLOCALDATA`, `$APPCACHE`, `$APPLOG`.",
+                        "type": "string"
+                      },
+                      "name": {
+                        "description": "The name for this allowed shell command configuration.\n\nThis name will be used inside of the webview API to call this command along with any specified arguments.",
+                        "type": "string"
+                      },
+                      "sidecar": {
+                        "description": "If this command is a sidecar command.",
+                        "type": "boolean"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "Identifier": {
+      "oneOf": [
+        {
+          "description": "app:default -> Default permissions for the plugin.",
+          "type": "string",
+          "enum": [
+            "app:default"
+          ]
+        },
+        {
+          "description": "app:allow-app-hide -> Enables the app_hide command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-app-hide"
+          ]
+        },
+        {
+          "description": "app:allow-app-show -> Enables the app_show command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-app-show"
+          ]
+        },
+        {
+          "description": "app:allow-name -> Enables the name command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-name"
+          ]
+        },
+        {
+          "description": "app:allow-tauri-version -> Enables the tauri_version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-tauri-version"
+          ]
+        },
+        {
+          "description": "app:allow-version -> Enables the version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:allow-version"
+          ]
+        },
+        {
+          "description": "app:deny-app-hide -> Denies the app_hide command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-app-hide"
+          ]
+        },
+        {
+          "description": "app:deny-app-show -> Denies the app_show command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-app-show"
+          ]
+        },
+        {
+          "description": "app:deny-name -> Denies the name command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-name"
+          ]
+        },
+        {
+          "description": "app:deny-tauri-version -> Denies the tauri_version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-tauri-version"
+          ]
+        },
+        {
+          "description": "app:deny-version -> Denies the version command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "app:deny-version"
+          ]
+        },
+        {
+          "type": "string",
+          "enum": [
+            "clipboard-manager:default"
+          ]
+        },
+        {
+          "description": "clipboard-manager:allow-read -> Enables the read command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "clipboard-manager:allow-read"
+          ]
+        },
+        {
+          "description": "clipboard-manager:allow-write -> Enables the write command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "clipboard-manager:allow-write"
+          ]
+        },
+        {
+          "description": "clipboard-manager:deny-read -> Denies the read command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "clipboard-manager:deny-read"
+          ]
+        },
+        {
+          "description": "clipboard-manager:deny-write -> Denies the write command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "clipboard-manager:deny-write"
+          ]
+        },
+        {
+          "type": "string",
+          "enum": [
+            "dialog:default"
+          ]
+        },
+        {
+          "description": "dialog:allow-ask -> Enables the ask command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "dialog:allow-ask"
+          ]
+        },
+        {
+          "description": "dialog:allow-confirm -> Enables the confirm command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "dialog:allow-confirm"
+          ]
+        },
+        {
+          "description": "dialog:allow-message -> Enables the message command without any pre-configured scope.",
+          "type": "string",
+          "enum": [
+            "dialog:allow-message"
+          ]
+        },
