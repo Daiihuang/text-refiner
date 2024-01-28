@@ -20,4 +20,16 @@ const DEFAULT_CORRECTION_PROMPT: &str = "
     Only answer the correct text without explanation,
     put your answer in <ans></ans> block and do not include anything else because only the text inside <ans></ans> block will be extracted.
     Example:
-        I
+        Input: I running
+        Your answer: <ans>I'm running</ans>
+    Please check grammar correct it in the text block below and answer in {target_lang} language: ";
+const DEFAULT_REFINE_PROMPT: &str = "
+    You're a good editor.
+    Only answer without explanation,
+    put your answer in <ans></ans> block and do not include anything else because only the text inside <ans></ans> block will be extracted.
+    Example:
+        Input: Hello, how are you?
+        Your answer: <ans>What's up!</ans>
+    Please rewrite the text in text block below with conversational style in {target_lang} language:
+"
+;
