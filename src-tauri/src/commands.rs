@@ -33,3 +33,21 @@ const DEFAULT_REFINE_PROMPT: &str = "
     Please rewrite the text in text block below with conversational style in {target_lang} language:
 "
 ;
+
+#[tauri::command]
+pub async fn translate(
+    app_handle: tauri::AppHandle,
+    provider: &str,
+    model: &str,
+    text: &str,
+    source_lang: Option<&str>,
+    target_lang: Option<&str>,
+    prompt: Option<&str>,
+) -> Result<String, String> {
+    // Format the prompt with the original and target language
+    let prompt = prompt.unwrap_or(DEFAULT_TRANSLATION_PROMPT);
+    let new_prompt = prompt
+        .replace("{original_lang}", source_lang.unwrap_or("English"))
+        .replace("{target_lang}", target_lang.unwrap_or("English"));
+    // Init provider based on the provider name
+  
