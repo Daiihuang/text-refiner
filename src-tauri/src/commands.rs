@@ -65,4 +65,24 @@ pub async fn translate(
         let ans = res.split("<ans>").collect::<Vec<&str>>()[1]
             .split("</ans>")
             .collect::<Vec<&str>>()[0]
-            .replace("<t
+            .replace("<text>", "")
+            .replace("</text>", "");
+        return Ok(ans);
+    }
+}
+
+#[tauri::command]
+pub async fn correct(
+    app_handle: tauri::AppHandle,
+    provider: &str,
+    model: &str,
+    text: &str,
+    prompt: Option<&str>,
+    source_lang: Option<&str>,
+    target_lang: Option<&str>,
+) -> Result<String, String> {
+    let prompt = prompt.unwrap_or(DEFAULT_CORRECTION_PROMPT);
+    // Format the prompt with the original and target language
+    let new_prompt = prompt
+        .replace("{original_lang}", source_lang.unwrap_or("English"))
+        .replace("{target_lang}", target_lang.unwrap_
