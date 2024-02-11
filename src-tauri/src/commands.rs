@@ -50,4 +50,19 @@ pub async fn translate(
         .replace("{original_lang}", source_lang.unwrap_or("English"))
         .replace("{target_lang}", target_lang.unwrap_or("English"));
     // Init provider based on the provider name
-  
+    let provider_obj = get_provider(app_handle, provider, model);
+
+    let res = provider_obj
+        .completion(format!("{}<text>{}<text>. Your answer: ", new_prompt, text).as_str())
+        .await;
+    if res.is_err() {
+        return Ok(
+            "Something wrong with LLM provider API. Please check the config and try again!"
+                .to_string(),
+        );
+    } else {
+        let res = res.unwrap();
+        let ans = res.split("<ans>").collect::<Vec<&str>>()[1]
+            .split("</ans>")
+            .collect::<Vec<&str>>()[0]
+            .replace("<t
