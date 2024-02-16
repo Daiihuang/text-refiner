@@ -120,4 +120,17 @@ pub async fn refine(
     // Format the prompt with the original and target language
     let new_prompt = prompt
         .replace("{original_lang}", source_lang.unwrap_or("English"))
-        .replace("{targe
+        .replace("{target_lang}", target_lang.unwrap_or("English"));
+    let provider = get_provider(app_handle, provider, model);
+    let res = provider
+        .completion(format!("{}<text>{}<text>. Your answer: ", new_prompt, text).as_str())
+        .await;
+    // Retrieve the answer from the response and remove all other xml tag in ans
+    if res.is_err() {
+        return Ok(
+            "Something wrong with LLM provider API. Please check the config and try again!"
+                .to_string(),
+        );
+    } else {
+        let res = res.unwrap();
+        let ans = res
