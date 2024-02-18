@@ -133,4 +133,11 @@ pub async fn refine(
         );
     } else {
         let res = res.unwrap();
-        let ans = res
+        let ans = res.split("<ans>").collect::<Vec<&str>>()[1]
+            .split("</ans>")
+            .collect::<Vec<&str>>()[0]
+            .replace("<text>", "")
+            .replace("</text>", "");
+        return Ok(ans);
+    }
+}
