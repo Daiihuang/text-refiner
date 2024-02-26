@@ -30,4 +30,20 @@ impl Provider for OpenAIProvider {
         let client = self.client.clone();
         let request = CreateChatCompletionRequestArgs::default()
             .model(self.model.clone())
-            .messages(
+            .messages([ChatCompletionRequestUserMessageArgs::default()
+                .content(prompt)
+                .build()
+                .unwrap()
+                .into()])
+            .build()
+            .unwrap();
+        let res = client.chat().create(request).await;
+        match res {
+            Ok(res) => {
+                let response = res.choices[0].message.content.clone().unwrap();
+                Ok(response)
+            }
+            Err(err) => Err(err.to_string()),
+        }
+    }
+}
