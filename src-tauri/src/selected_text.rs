@@ -20,4 +20,15 @@ async fn show_dialog(app: &AppHandle, message: &str, title: &str, kind: MessageD
 pub async fn get_selected_text(app: &AppHandle) -> Result<String, String> {
     const COPY_APPLE_SCRIPT: &str = r#"tell application "System Events" to keystroke "c" using command down"#;
 
-  
+    let shell = app.shell();
+    let output = shell.command("osascript")
+                .args(&["-e", COPY_APPLE_SCRIPT])
+                .output()
+                .await;
+
+    match output {
+        Ok(output) => {
+            if !output.status.success() {
+                println!("Failed to execute AppleScript command: {:?}", output);
+                show_dialog(app, "Could not have Accessibility permission! Please enable it in your MacOS setting!", "Error", MessageDialogKind::Error).await;
+                return Err("Failed to execute AppleScript command".to_string())
