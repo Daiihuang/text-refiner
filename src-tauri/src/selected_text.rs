@@ -31,4 +31,17 @@ pub async fn get_selected_text(app: &AppHandle) -> Result<String, String> {
             if !output.status.success() {
                 println!("Failed to execute AppleScript command: {:?}", output);
                 show_dialog(app, "Could not have Accessibility permission! Please enable it in your MacOS setting!", "Error", MessageDialogKind::Error).await;
-                return Err("Failed to execute AppleScript command".to_string())
+                return Err("Failed to execute AppleScript command".to_string());
+            }
+            // Wait for the clipboard to be updated
+            thread::sleep(Duration::from_millis(100));
+
+            // Get text from clipboard
+            match app.clipboard().read() {
+                Ok(selected_text) => {
+                    println!("Selected text: {:?}", selected_text);
+                    Ok(format!("{:?}", selected_text))
+                },
+                Err(_) => {
+                    show_dialog(app, "Could not have Accessibility permission! Please enable it in your MacOS setting!", "Error", MessageDialogKind::Error).await;
+                    Err("Failed to read from clipboa
