@@ -44,4 +44,13 @@ pub async fn get_selected_text(app: &AppHandle) -> Result<String, String> {
                 },
                 Err(_) => {
                     show_dialog(app, "Could not have Accessibility permission! Please enable it in your MacOS setting!", "Error", MessageDialogKind::Error).await;
-                    Err("Failed to read from clipboa
+                    Err("Failed to read from clipboard".to_string())
+                },
+            }
+        },
+        Err(_) => {
+            show_dialog(app, "Could not have Accessibility permission! Please enable it in your MacOS setting!", "Error", MessageDialogKind::Error).await;
+            Err("Failed to execute AppleScript command".to_string())
+        },
+    }
+}
